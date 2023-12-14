@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "template.core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/template.core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/template.core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "template.core/1.0.0": {
+      "type": "project",
+      "path": "../template.core/template.core.csproj",
+      "msbuildProject": "../template.core/template.core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "template.core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/collins/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/collins/Desktop/08-Dec/01-template/template.core/template.core.csproj": {
+              "projectPath": "/Users/collins/Desktop/08-Dec/01-template/template.core/template.core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
