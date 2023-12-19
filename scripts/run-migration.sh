@@ -1,0 +1,1 @@
+dotnet ef migrations add --context=AppDbContext --startup-project=template.api/template.api.csproj --project=template.core/template.core.csproj ${@}
