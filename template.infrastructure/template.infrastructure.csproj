@@ -1,16 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
     <ProjectReference Include="..\template.core\template.core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="HotChocolate" Version="14.0.0-p.21" />
-    <PackageReference Include="HotChocolate.AspNetCore" Version="14.0.0-p.21" />
-    <PackageReference Include="HotChocolate.Data" Version="14.0.0-p.21" />
-    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="14.0.0-p.21" />
-    <PackageReference Include="HotChocolate.Types" Version="14.0.0-p.21" />
-    <PackageReference Include="HotChocolate.Types.Analyzers" Version="14.0.0-p.21" />
+    <PackageReference Include="HotChocolate.Types.Analyzers" Version="14.0.0-tags-13-1-0-preview-5.1"/>
+    <PackageReference Include="HotChocolate.AspNetCore" Version="14.0.0-tags-13-1-0-preview-5.1"/>
+
   </ItemGroup>
 
   <PropertyGroup>
